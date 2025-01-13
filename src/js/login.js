@@ -23,3 +23,4 @@ function validateForm(event) {
 }
 
 document.getElementById('login-form').addEventListener('submit', validateForm);
+

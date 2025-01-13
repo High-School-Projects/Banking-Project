@@ -1,0 +1,15 @@
+{
+  "name": "my-website-project",
+  "version": "1.0.0",
+  "description": "A simple website with a login page.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'"
+  },
+  "author": "Rahid Khadir",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

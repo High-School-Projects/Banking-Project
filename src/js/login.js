@@ -1,26 +1,32 @@
 // filepath: /c:/Users/HUH/Desktop/Project/poop/my-website-project/src/js/login.js
+const mysql = require('mysql');
 function validateForm(event) {
     event.preventDefault();
-    
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     const errorMessage = document.getElementById('error-message');
+    
+    const db = mysql.createConnection({
+        host: 'localhost',
+        user: 'root',
+        password: 'Rahidman123@',
+        database: 'userinfo'
+    });
 
-    errorMessage.textContent = '';
+    db.connect((err) => {
+        if (err) {
+            console.error('Error connecting to database:', err);
+            return;
+        }
+        const query = 'SELECT * FROM userlogins';
+        console.log(query);
 
-    if (username === '' || password === '') {
-        errorMessage.textContent = 'Both fields are required.';
-        return;
-    }
-
-    // Simulate a login process
-    if (username === 'admin' && password === 'password') {
-        alert('Login successful!');
-        window.location.href = 'balance.html'; // Redirect to balance page
-    } else {
-        errorMessage.textContent = 'Invalid username or password.';
-    }
+        console.log('Connected to database');
+        db.query(query, (err, results) => {
+            if (err) throw err;
+            alert(results); // Output the results of the query
+        });
+    });
 }
 
 document.getElementById('login-form').addEventListener('submit', validateForm);
-

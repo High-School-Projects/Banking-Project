@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            width: 400px; 
+            text-align: center; 
+        }
+        .form-container label, .form-container input {
+            margin-bottom: 20px; 
+            font-size: 18px; 
+        }
+        .form-container input {
+            padding: 12px; 
+            border: 1px solid #000000;
+            border-radius: 5px;
+        }
+        .form-container button {
+            margin-top: 20px; 
+            padding: 12px;
+            font-size: 18px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <label for="username">Enter a username</label>
+        <input type="text" id="username">
+        
+        <label for="password">Enter a password</label>
+        <input type="password" id="password">
+        
+        <label for="repassword">Re-enter the password</label>
+        <input type="password" id="repassword">
+        
+        <button onclick="alert('Account successfully created!'); location.href='login.html';">Submit</button>
+    </div>
+</body>
+
+</html>

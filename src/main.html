@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            border: 2px solid #696969b9; 
+            border-radius: 15px; 
+            padding: 20px; 
+        }
+        .buttons button {
+            font-size: 24px;
+            padding: 15px 30px;
+        }
+        .logout-button {
+            position: absolute;
+            top: 20px; 
+            right: 20px; 
+            padding: 15px 25px; 
+            background-color: #f2f2f2;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid #000000; 
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="logout-button" onclick="location.href='login.html'">Logout</button>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="location.href='Balance.html'">Balance</button>
+            <button onclick="location.href='Summary.html'">Summary</button>
+            <button onclick="location.href='Transactions.html'">Transactions</button>
+            <button onclick="location.href='Update.html'">Update</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .no-border {
+            border: none;
+        }
+        .no-border button {
+            font-size: 16px; /* Increase button font size */
+            padding: 10px 20px; /* Increase button padding */
+            border: 2px solid #000000; /* Add button border */
+            background-color: #f2f2f2; /* Add background color */
+            color: rgb(0, 0, 0); /* Add text color */
+            border-radius: 5px; /* Add rounded corners */
+        }
+        .no-border {
+            border: none; /* Remove border from last column cells */
+        }
+        .back-button {
+            position: absolute;
+            top: 20px; /* Shift down */
+            left: 20px; /* Shift to the right */
+            padding: 15px 25px; /* Increase padding to make it bigger */
+            background-color: #f2f2f2;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid #000000; /* Add black border */
+        }
+    </style>
+</head>
+<body>
+    <a href="main.html" class="back-button">Back</a>
+    <table border="1">
+        <tr>
+            <th>Source</th>
+            <th>Amount</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>Costco</td>
+            <td>$323.59</td>
+            <td>11/21/2024</td>
+            <td class="no-border"><button onclick="location.href='update1.html'">Update</button></td>
+        </tr>
+        <tr>
+            <td>Target</td>
+            <td>$25.62</td>
+            <td>12/01/2024</td>
+            <td class="no-border"><button onclick="location.href='update2.html'">Update</button></td>
+        </tr>
+        <tr>
+            <td>Walmart</td>
+            <td>$57.46</td>
+            <td>12/14/2024</td>
+            <td class="no-border"><button onclick="location.href='update3.html'">Update</button></td>
+        </tr>
+        <tr>
+            <td>Amazon</td>
+            <td>$10.59</td>
+            <td>12/25/2024</td>
+            <td class="no-border"><button onclick="location.href='update4.html'">Update</button></td>
+        </tr>
+        <tr>
+            <td>Popeyes</td>
+            <td>$368.96</td>
+            <td>1/10/2025
+            </td>
+            <td class="no-border"><button onclick="location.href='update5.html'">Update</button></td>
+        </tr>
+    </table>
+</body>
+</html>

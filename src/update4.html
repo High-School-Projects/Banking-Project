@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-size: 1.5em;
+        }
+        div {
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="source">Source</label><br>
+        <input type="text" id="source" name="source" value="Amazon"><br><br>
+        
+        <label for="amount">Amount</label><br>
+        <input type="text" id="amount" name="amount" value="$10.59"><br><br>
+        
+        <label for="date">Date</label><br>
+        <input type="text" id="date" name="date" value="12/25/2024"><br><br>
+        
+        <button onclick="submitForm()">Submit</button>
+    </div>
+
+    <script>
+        function submitForm() {
+            alert("Updates successful!");
+            window.location.href = "update.html";
+        }
+    </script>
+</body>
+</html>

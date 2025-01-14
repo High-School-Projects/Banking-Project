@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            width: 400px; 
+            text-align: center; 
+        }
+        .form-container label, .form-container input {
+            margin-bottom: 20px; 
+            font-size: 18px; 
+        }
+        .form-container input {
+            padding: 12px; 
+            border: 1px solid #000000;
+            border-radius: 5px;
+        }
+        .form-container button {
+            margin-top: 20px; 
+            padding: 12px;
+            font-size: 18px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <label for="Source">Where was the Expense Made?</label>
+        <input type="text" id="Source">
+        
+        <label for="amount">How much was Spent?</label>
+        <input type="text" id="amount">
+        
+        <label for="Date">When was the Expense Made?</label>
+        <input type="text" id="date">
+        
+        <button onclick="alert('Transaction Saved!'); window.location.href='transactions.html';">Submit</button>
+    </div>
+</body>
+
+</html>
